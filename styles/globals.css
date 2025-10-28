@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
+  .container .menus.d-none {
+    display: none;
+    margin-top: 20px;
+  }
+  .container .menus.d-block {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+/* image popup */
+img.mfp-img {
+  box-shadow: 0 0 8px rgb(0 0 0 / 60%);
+  position: absolute;
+  max-height: 392px;
+  padding: 0 !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mfp-img-container .mfp-content {
+  max-width: 400px !important;
+}
+.mfp-img-container .mfp-close {
+  top: -110px;
+  right: -24px;
+}
+
+/* .empty_notice {
+  color: #d6434a;
+  margin-top: 5px;
+}
+.returnmessage {
+  color: green;
+  margin-top: 5px;
+} */
