@@ -10,7 +10,7 @@ const Header = () => {
         <div className="container">
           <div className="logo">
             <a href="#home">
-              @axo<span className="text-primary">.me</span>
+              Fassil<span className="text-primary">.dev</span>
             </a>
           </div>
           <ul className={`menus ${toggle ? "d-block" : ""}`}>
