@@ -33,7 +33,7 @@ const Index = () => {
   const { blog, portfolio_modal } = useContext(AxoContext);
   return (
     <Fragment>
-      <PreLoader />
+      {/* <PreLoader /> */}
       <VideoPopup />
       <ImageView />
       {blog && <BlogPopup />}
