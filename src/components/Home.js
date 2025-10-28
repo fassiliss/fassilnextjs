@@ -7,20 +7,20 @@ const Home = () => {
         <div className="row">
           <div className="col-lg-7 col-12">
             <h1 className="wow fadeInDown" data-wow-delay=".5s">
-              Brandon User Interface Designer
+              Fassil Tsegaye Full Stack Web Developer
             </h1>
             <p className="short-bio wow fadeInDown" data-wow-delay=".6s">
-              I'm a Freelance UI/UX Designer and Product Desiger based in
-              London, England. I strives to build immersive and beautiful web
-              applications through carefully crafted code and user-centric
-              design.
+              I'm a Full Stack Web Developer based in Smyrna, Tennessee. I
+              specialize in building modern, responsive web applications using
+              React, Next.js, Node.js, and cloud technologies. Passionate about
+              creating seamless user experiences and scalable solutions.
             </p>
             <a
               href="#contact"
               className="cf-btn wow fadeInDown"
               data-wow-delay=".7s"
             >
-              Conect with me
+              Connect with me
             </a>
             <div
               className="counter d-flex align-center content-space-between wow fadeInDown"
@@ -30,7 +30,7 @@ const Home = () => {
                 <h2>
                   <Counter end={7} />+
                 </h2>
-                <p className="font-20px">Year Exprence</p>
+                <p className="font-20px">3 Years Experience</p>
               </div>
               <div className="project">
                 <h2>
@@ -49,7 +49,7 @@ const Home = () => {
           <div className="col-lg-5">
             <div className="hero-right">
               <div className="hero-right-bg" />
-              <img src="./assets/images/author/hero.png" alt="image" />
+              <img src="./assets/images/author/pf1.png" alt="image" />
             </div>
           </div>
         </div>

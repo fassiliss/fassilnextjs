@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Axo Personal React NextJS Portfolio</title>
+        <title>Fassil Tsegaye Full Stack Developer</title>
         <link rel="stylesheet" href="assets/css/flaticon.css" />
         <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
