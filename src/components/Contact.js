@@ -48,23 +48,23 @@ const Contact = () => {
           <div className="col-lg-6 wow fadeInLeft">
             <div className="section-title left">
               <p className="sub-title">Get in touch !</p>
-              <h2>Contact us for a quote, help to join the team</h2>
+              <h2>Contact me for a quote, help to join the team</h2>
             </div>
             <ul className="info-details">
               <li>
                 <h4>Mail</h4>
-                <p>example@gmail.com</p>
+                <p>fassiliss@gmail.com</p>
               </li>
               <li>
                 <h4>Address</h4>
                 <p>
                   1540 Brookside Drive <br />
-                  Birmingham, Alabama, USA
+                  Smyrna, Tennessee, USA
                 </p>
               </li>
               <li>
                 <h4>Phone</h4>
-                <p>0123456789</p>
+                <p>6154967208</p>
               </li>
             </ul>
           </div>

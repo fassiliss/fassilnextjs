@@ -30,7 +30,7 @@ const Home = () => {
                 <h2>
                   <Counter end={7} />+
                 </h2>
-                <p className="font-20px">3 Years Experience</p>
+                <p className="font-20px">Years Experience</p>
               </div>
               <div className="project">
                 <h2>
