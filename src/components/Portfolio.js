@@ -92,18 +92,22 @@ const Portfolio = () => {
             </a>
           </div>
           <div className="portfolio-items wow fadeInUp">
-            <div className="item youtube">
-              <a
-                className="c-pointer"
-                href="//www.youtube.com/embed/B-ytMSuwbf8?autoplay=1"
-              >
-                <img
-                  className="c-pointer"
-                  src="/assets/images/portfolio/netflix-clone.png"
-                  alt="image"
-                />
-              </a>
-            </div>
+            <div className="item details">
+    <a
+      className="c-pointer"
+      href="#details-popup"
+      onClick={(e) => {
+        e.preventDefault();
+        portfolio_modal_show(true);
+      }}
+    >
+      <img
+        className="c-pointer"
+        src="/assets/images/portfolio/netflix-clone.png"
+        alt="Netflix Clone 2025"
+      />
+    </a>
+  </div>
             <div className="item vimeo">
               <a
                 className="c-pointer"
