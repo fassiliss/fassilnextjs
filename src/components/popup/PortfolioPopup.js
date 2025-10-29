@@ -22,38 +22,40 @@ const PortfolioPopup = () => {
             playback, and a responsive design that mirrors Netflix's user
             experience.
           </p>
-          <div className="project-details">
-            <p>
-              <strong>Technologies:</strong> React 19, Vite, Material UI, TMDB
-              API, Axios, React YouTube
-            </p>
-            <p>
-              <strong>Industry:</strong> Entertainment / Streaming
-            </p>
-            <p>
-              <strong>Date:</strong> 2025
-            </p>
-            <p>
-              <strong>Live Demo:</strong>{" "}
-              <a
-                href="https://fassiliss.github.io/Netflix-2025/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Project
-              </a>
-            </p>
-            <p>
-              <strong>GitHub:</strong>{" "}
-              <a
-                href="https://github.com/fassiliss/Netflix-2025"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Code
-              </a>
-            </p>
-          </div>
+        <div className="project-details">
+  <p>
+    <strong>Technologies:</strong> React 19, Vite, Material UI, TMDB
+    API, Axios, React YouTube
+  </p>
+  <p>
+    <strong>Industry:</strong> Entertainment / Streaming
+  </p>
+  <p>
+    <strong>Date:</strong> 2025
+  </p>
+  <p>
+    <strong>Live Demo:</strong>{" "}
+    <a
+      href="https://fassiliss.github.io/Netflix-2025/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: '#1e90ff', textDecoration: 'underline', cursor: 'pointer' }}
+    >
+      View Project
+    </a>
+  </p>
+  <p>
+    <strong>GitHub:</strong>{" "}
+    <a
+      href="https://github.com/fassiliss/Netflix-2025"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: '#1e90ff', textDecoration: 'underline', cursor: 'pointer' }}
+    >
+      View Code
+    </a>
+  </p>
+</div>
         </div>
       </div>
     </Modal>
