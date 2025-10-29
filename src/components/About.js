@@ -8,7 +8,7 @@ const About = () => {
               <div className="image-bg moving-effect" />
               <div className="image-area">
                 <img
-                  src="./assets/images/author/about.png"
+                  src="./assets/images/author/about1.png"
                   alt="Fassil Tsegaye"
                 />
               </div>
