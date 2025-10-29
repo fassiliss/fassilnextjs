@@ -1,30 +1,59 @@
 import { AxoContext } from "@/src/Context";
 import { useContext } from "react";
 import Modal from "./Modal";
+
 const PortfolioPopup = () => {
   const { portfolio_modal_show } = useContext(AxoContext);
   return (
     <Modal close={portfolio_modal_show}>
       <div className="content">
         <div className="img">
-          <img src="/assets/images/portfolio/4.png" alt="image" />
+          <img
+            src="/assets/images/portfolio/netflix-clone.png"
+            alt="Netflix Clone 2025"
+          />
         </div>
         <div className="des">
-          <span>Details</span>
-          <h4>Mobile Application</h4>
+          <span>Personal Project</span>
+          <h4>Netflix Clone 2025</h4>
           <p>
-            We live in a world where we need to move quickly and iterate on our
-            ideas as flexibly as possible. Building mockups strikes the ideal
-            balance between true-life representation of the end product and ease
-            of modification.
+            A fully functional Netflix clone built with modern web technologies.
+            This streaming platform replica features movie browsing, trailer
+            playback, and a responsive design that mirrors Netflix's user
+            experience.
           </p>
-          <p>
-            Mockups are useful both for the creative phase of the project - for
-            instance when you're trying to figure out your user flows or the
-            proper visual hierarchy - and the production phase when they will
-            represent the target product. Making mockups a part of your creative
-            and development process allows you to quickly and easily ideate.
-          </p>
+          <div className="project-details">
+            <p>
+              <strong>Technologies:</strong> React 19, Vite, Material UI, TMDB
+              API, Axios, React YouTube
+            </p>
+            <p>
+              <strong>Industry:</strong> Entertainment / Streaming
+            </p>
+            <p>
+              <strong>Date:</strong> 2025
+            </p>
+            <p>
+              <strong>Live Demo:</strong>{" "}
+              <a
+                href="https://fassiliss.github.io/Netflix-2025/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
+            </p>
+            <p>
+              <strong>GitHub:</strong>{" "}
+              <a
+                href="https://github.com/fassiliss/Netflix-2025"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Code
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </Modal>
