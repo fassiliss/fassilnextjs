@@ -13,146 +13,163 @@ const Services = () => {
     <section id="services">
       <div className="container">
         <div className="section-title">
-          <p className="sub-title wow fadeInDown">My services</p>
+          <p className="sub-title wow fadeInDown">My Services</p>
           <h2 className="wow fadeInDown">
-            What I do <br />
-            for My Customers
+            What I Offer <br />
+            To My Clients
           </h2>
         </div>
         <div className="card-container">
           <div className="row">
+            {/* Service 1: Full Stack Development */}
             <div className="col-md-6 col-xl-4">
               <div className="service-card wow fadeInDown" data-wow-delay=".2s">
                 <div className="icon-container">
                   <img
-                    src="./assets/icons/uiux.svg"
+                    src="./assets/icons/web_dev.svg"
                     className="svg"
-                    alt="image"
+                    alt="Full Stack Development"
                   />
                 </div>
-                <h3>UI/UX Designer</h3>
+                <h3>Full Stack Web Development</h3>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                  Building modern, responsive web applications using React,
+                  Next.js, Node.js, and cloud technologies. From concept to
+                  deployment, I create scalable solutions tailored to your
+                  business needs.
                 </p>
                 <a href="#services_1" className="link" />
               </div>
               <div className="mfp-fade mfp-hide" id="services_1">
                 <div className="content">
                   <div className="img">
-                    <img src="./assets/images/services/1.jpg" alt="image" />
+                    <img
+                      src="./assets/images/services/1.jpg"
+                      alt="Full Stack Development"
+                    />
                   </div>
                   <div className="des">
-                    <h4>UI/UX Designer</h4>
+                    <h4>Full Stack Web Development</h4>
                     <p className="price">
-                      Start from <span>$99</span>
+                      Start from <span>$500</span>
                     </p>
                     <p>
-                      We live in a world where we need to move quickly and
-                      iterate on our ideas as flexibly as possible. Building
-                      mockups strikes the ideal balance between true-life
-                      representation of the end product and ease of
-                      modification.
+                      I specialize in building complete web applications from
+                      the ground up. Whether you need a custom web app,
+                      e-commerce platform, or business management system, I
+                      handle everything from database design to user interface
+                      implementation.
                     </p>
                     <p>
-                      Mockups are useful both for the creative phase of the
-                      project - for instance when you're trying to figure out
-                      your user flows or the proper visual hierarchy - and the
-                      production phase when they will represent the target
-                      product. Making mockups a part of your creative and
-                      development process allows you to quickly and easily
-                      ideate.
+                      <strong>Technologies:</strong> React, Next.js, Node.js,
+                      Express, MongoDB, MySQL, AWS, Vercel, Firebase
+                    </p>
+                    <p>
+                      <strong>What's Included:</strong> Responsive design, API
+                      development, database setup, deployment, and 30 days of
+                      post-launch support.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* Service 2: Frontend Development */}
             <div className="col-md-6 col-xl-4">
               <div className="service-card wow fadeInDown" data-wow-delay=".3s">
                 <div className="icon-container">
                   <img
-                    src="./assets/icons/web_dev.svg"
+                    src="./assets/icons/uiux.svg"
                     className="svg"
-                    alt="image"
+                    alt="Frontend Development"
                   />
                 </div>
-                <h3>Webflow Developer</h3>
+                <h3>Frontend Development</h3>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                  Creating stunning, user-friendly interfaces with React,
+                  Next.js, and modern CSS frameworks. Responsive design that
+                  works perfectly on all devices and provides exceptional user
+                  experience.
                 </p>
                 <a href="#services_2" className="link" />
                 <div className="mfp-fade mfp-hide" id="services_2">
                   <div className="content">
                     <div className="img">
-                      <img src="./assets/images/services/2.jpg" alt="image" />
+                      <img
+                        src="./assets/images/services/2.jpg"
+                        alt="Frontend Development"
+                      />
                     </div>
                     <div className="des">
-                      <h4>Webflow Developer</h4>
+                      <h4>Frontend Development</h4>
                       <p className="price">
-                        Start from <span>$99</span>
+                        Start from <span>$300</span>
                       </p>
                       <p>
-                        We live in a world where we need to move quickly and
-                        iterate on our ideas as flexibly as possible. Building
-                        mockups strikes the ideal balance between true-life
-                        representation of the end product and ease of
-                        modification.
+                        Transform your designs into pixel-perfect, interactive
+                        websites. I build fast, accessible, and SEO-friendly
+                        frontend applications that engage users and drive
+                        conversions.
                       </p>
                       <p>
-                        Mockups are useful both for the creative phase of the
-                        project - for instance when you're trying to figure out
-                        your user flows or the proper visual hierarchy - and the
-                        production phase when they will represent the target
-                        product. Making mockups a part of your creative and
-                        development process allows you to quickly and easily
-                        ideate.
+                        <strong>Technologies:</strong> React 19, Next.js,
+                        TypeScript, Tailwind CSS, Material UI, Vite
+                      </p>
+                      <p>
+                        <strong>What's Included:</strong> Mobile-first
+                        responsive design, cross-browser compatibility,
+                        performance optimization, and modern animations.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* Service 3: Backend & API Development */}
             <div className="col-md-6 col-xl-4">
               <div className="service-card wow fadeInDown" data-wow-delay=".4s">
                 <div className="icon-container">
                   <img
                     src="./assets/icons/product_desginer.svg"
                     className="svg"
-                    alt="image"
+                    alt="Backend Development"
                   />
                 </div>
-                <h3>Product Designer</h3>
+                <h3>Backend & API Development</h3>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                  Developing robust backend systems, RESTful APIs, and database
+                  solutions. Secure, scalable server-side applications that
+                  power your business logic and handle complex data operations.
                 </p>
                 <a href="#services_3" className="link" />
                 <div className="mfp-fade mfp-hide" id="services_3">
                   <div className="content">
                     <div className="img">
-                      <img src="./assets/images/services/3.jpg" alt="image" />
+                      <img
+                        src="./assets/images/services/3.jpg"
+                        alt="Backend Development"
+                      />
                     </div>
                     <div className="des">
-                      <h4>Product Designer</h4>
+                      <h4>Backend & API Development</h4>
                       <p className="price">
-                        Start from <span>$99</span>
+                        Start from <span>$400</span>
                       </p>
                       <p>
-                        We live in a world where we need to move quickly and
-                        iterate on our ideas as flexibly as possible. Building
-                        mockups strikes the ideal balance between true-life
-                        representation of the end product and ease of
-                        modification.
+                        Build powerful backend systems that scale with your
+                        business. I create secure APIs, implement authentication
+                        systems, and design efficient databases that handle your
+                        data reliably.
                       </p>
                       <p>
-                        Mockups are useful both for the creative phase of the
-                        project - for instance when you're trying to figure out
-                        your user flows or the proper visual hierarchy - and the
-                        production phase when they will represent the target
-                        product. Making mockups a part of your creative and
-                        development process allows you to quickly and easily
-                        ideate.
+                        <strong>Technologies:</strong> Node.js, Express,
+                        MongoDB, MySQL, PostgreSQL, AWS, Firebase, REST APIs
+                      </p>
+                      <p>
+                        <strong>What's Included:</strong> API design and
+                        documentation, database architecture,
+                        authentication/authorization, and cloud deployment.
                       </p>
                     </div>
                   </div>
