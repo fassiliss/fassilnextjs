@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+
 const Services = () => {
   useEffect(() => {
     let VanillaTilt = require("vanilla-tilt");
@@ -9,6 +10,7 @@ const Services = () => {
       transition: true,
     });
   }, []);
+
   return (
     <section id="services">
       <div className="container">
@@ -34,42 +36,16 @@ const Services = () => {
                 <h3>Full Stack Web Development</h3>
                 <p>
                   Building modern, responsive web applications using React,
-                  Next.js, Node.js, and cloud technologies. From concept to
-                  deployment, I create scalable solutions tailored to your
-                  business needs.
+                  Next.js, Node.js, and cloud technologies. Complete solutions
+                  from database to deployment.
                 </p>
-                <a href="#services_1" className="link" />
-              </div>
-              <div className="mfp-fade mfp-hide" id="services_1">
-                <div className="content">
-                  <div className="img">
-                    <img
-                      src="./assets/images/services/1.jpg"
-                      alt="Full Stack Development"
-                    />
-                  </div>
-                  <div className="des">
-                    <h4>Full Stack Web Development</h4>
-                    <p className="price">
-                      Start from <span>$500</span>
-                    </p>
-                    <p>
-                      I specialize in building complete web applications from
-                      the ground up. Whether you need a custom web app,
-                      e-commerce platform, or business management system, I
-                      handle everything from database design to user interface
-                      implementation.
-                    </p>
-                    <p>
-                      <strong>Technologies:</strong> React, Next.js, Node.js,
-                      Express, MongoDB, MySQL, AWS, Vercel, Firebase
-                    </p>
-                    <p>
-                      <strong>What's Included:</strong> Responsive design, API
-                      development, database setup, deployment, and 30 days of
-                      post-launch support.
-                    </p>
-                  </div>
+                <div className="service-details">
+                  <p className="tech-stack">
+                    <strong>Tech:</strong> React, Next.js, Node.js, MongoDB, AWS
+                  </p>
+                  <p className="price">
+                    Starting at <span>$500</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -86,42 +62,18 @@ const Services = () => {
                 </div>
                 <h3>Frontend Development</h3>
                 <p>
-                  Creating stunning, user-friendly interfaces with React,
-                  Next.js, and modern CSS frameworks. Responsive design that
-                  works perfectly on all devices and provides exceptional user
-                  experience.
+                  Creating stunning, user-friendly interfaces with modern
+                  frameworks. Responsive design that works perfectly on all
+                  devices and provides exceptional user experience.
                 </p>
-                <a href="#services_2" className="link" />
-                <div className="mfp-fade mfp-hide" id="services_2">
-                  <div className="content">
-                    <div className="img">
-                      <img
-                        src="./assets/images/services/2.jpg"
-                        alt="Frontend Development"
-                      />
-                    </div>
-                    <div className="des">
-                      <h4>Frontend Development</h4>
-                      <p className="price">
-                        Start from <span>$300</span>
-                      </p>
-                      <p>
-                        Transform your designs into pixel-perfect, interactive
-                        websites. I build fast, accessible, and SEO-friendly
-                        frontend applications that engage users and drive
-                        conversions.
-                      </p>
-                      <p>
-                        <strong>Technologies:</strong> React 19, Next.js,
-                        TypeScript, Tailwind CSS, Material UI, Vite
-                      </p>
-                      <p>
-                        <strong>What's Included:</strong> Mobile-first
-                        responsive design, cross-browser compatibility,
-                        performance optimization, and modern animations.
-                      </p>
-                    </div>
-                  </div>
+                <div className="service-details">
+                  <p className="tech-stack">
+                    <strong>Tech:</strong> React, Next.js, TypeScript, Tailwind
+                    CSS
+                  </p>
+                  <p className="price">
+                    Starting at <span>$300</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -140,39 +92,15 @@ const Services = () => {
                 <p>
                   Developing robust backend systems, RESTful APIs, and database
                   solutions. Secure, scalable server-side applications that
-                  power your business logic and handle complex data operations.
+                  power your business logic.
                 </p>
-                <a href="#services_3" className="link" />
-                <div className="mfp-fade mfp-hide" id="services_3">
-                  <div className="content">
-                    <div className="img">
-                      <img
-                        src="./assets/images/services/3.jpg"
-                        alt="Backend Development"
-                      />
-                    </div>
-                    <div className="des">
-                      <h4>Backend & API Development</h4>
-                      <p className="price">
-                        Start from <span>$400</span>
-                      </p>
-                      <p>
-                        Build powerful backend systems that scale with your
-                        business. I create secure APIs, implement authentication
-                        systems, and design efficient databases that handle your
-                        data reliably.
-                      </p>
-                      <p>
-                        <strong>Technologies:</strong> Node.js, Express,
-                        MongoDB, MySQL, PostgreSQL, AWS, Firebase, REST APIs
-                      </p>
-                      <p>
-                        <strong>What's Included:</strong> API design and
-                        documentation, database architecture,
-                        authentication/authorization, and cloud deployment.
-                      </p>
-                    </div>
-                  </div>
+                <div className="service-details">
+                  <p className="tech-stack">
+                    <strong>Tech:</strong> Node.js, Express, MongoDB, MySQL, AWS
+                  </p>
+                  <p className="price">
+                    Starting at <span>$400</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -182,4 +110,5 @@ const Services = () => {
     </section>
   );
 };
+
 export default Services;
