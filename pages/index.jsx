@@ -1,9 +1,9 @@
 import About from "@/src/components/About";
-import Blog from "@/src/components/Blog";
+// import Blog from "@/src/components/Blog";
 import Client from "@/src/components/Client";
 import Contact from "@/src/components/Contact";
 import Home from "@/src/components/Home";
-import BlogPopup from "@/src/components/popup/BlogPopup";
+// import BlogPopup from "@/src/components/popup/BlogPopup";
 import ImageView from "@/src/components/popup/ImageView";
 import PortfolioPopup from "@/src/components/popup/PortfolioPopup";
 import VideoPopup from "@/src/components/popup/VideoPopup";
@@ -36,7 +36,6 @@ const Index = () => {
       {/* <PreLoader /> */}
       <VideoPopup />
       <ImageView />
-      {blog && <BlogPopup />}
       {portfolio_modal && <PortfolioPopup />}
       <Header />
       <Home />
@@ -45,7 +44,6 @@ const Index = () => {
       <Portfolio />
       <Testimonials />
       <Client />
-      <Blog />
       <Contact />
       <Footer />
       <ScrollTop />
