@@ -99,7 +99,7 @@ const Portfolio = () => {
               >
                 <img
                   className="c-pointer"
-                  src="/assets/images/portfolio/1.png"
+                  src="/assets/images/portfolio/netflix-clone.png"
                   alt="image"
                 />
               </a>
