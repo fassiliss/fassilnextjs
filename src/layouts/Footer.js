@@ -17,8 +17,15 @@ const Footer = () => {
           </a>
         </div>
         <div className="copy-right-text">
-          Developed with love by <a href="#">Codeefly</a> ©{" "}
-          {new Date().getFullYear()}
+          Developed with ❤️ by{" "}
+          <a
+            href="https://github.com/fassiliss"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fassil Tsegaye
+          </a>{" "}
+          © {new Date().getFullYear()}
         </div>
       </div>
     </footer>
