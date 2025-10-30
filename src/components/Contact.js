@@ -9,8 +9,10 @@ const Contact = () => {
   });
   const { name, email, message } = mailData;
   const [error, setError] = useState(null);
+
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
+
   const onSubmit = (e) => {
     e.preventDefault();
     if (name.length === 0 || email.length === 0 || message.length === 0) {
@@ -19,10 +21,10 @@ const Contact = () => {
     } else {
       emailjs
         .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
+          "service_lo6vubh", // Your Service ID
+          "template_x7fo3e4", // Your Template ID
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "tBMNkDxrY_X92xYZP" // Your Public Key
         )
         .then(
           (response) => {
@@ -36,35 +38,48 @@ const Contact = () => {
         );
     }
   };
+
   const clearError = () => {
     setTimeout(() => {
       setError(null);
     }, 2000);
   };
+
   return (
     <section id="contact">
       <div className="container">
         <div className="row align-center">
           <div className="col-lg-6 wow fadeInLeft">
             <div className="section-title left">
-              <p className="sub-title">Get in touch !</p>
-              <h2>Contact me for a quote, help to join the team</h2>
+              <p className="sub-title">Get in touch!</p>
+              <h2>Let's Work Together</h2>
             </div>
             <ul className="info-details">
               <li>
-                <h4>Mail</h4>
-                <p>fassiliss@gmail.com</p>
-              </li>
-              <li>
-                <h4>Address</h4>
+                <h4>Email</h4>
                 <p>
-                  1540 Brookside Drive <br />
-                  Smyrna, Tennessee, USA
+                  <a
+                    href="mailto:fassiliss@gmail.com"
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
+                    fassiliss@gmail.com
+                  </a>
                 </p>
               </li>
               <li>
+                <h4>Location</h4>
+                <p>Smyrna, Tennessee, USA</p>
+              </li>
+              <li>
                 <h4>Phone</h4>
-                <p>6154967208</p>
+                <p>
+                  <a
+                    href="tel:+16154967208"
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
+                    (615) 496-7208
+                  </a>
+                </p>
               </li>
             </ul>
           </div>
@@ -80,14 +95,14 @@ const Contact = () => {
               >
                 <span>
                   {error
-                    ? "Please Fill Required Fields"
-                    : "Your message has been received, We will contact you soon."}
+                    ? "Please fill in all required fields"
+                    : "Thank you! Your message has been sent successfully."}
                 </span>
               </div>
               <div className="form-group">
                 <input
                   type="text"
-                  placeholder="Name"
+                  placeholder="Your Name"
                   name="name"
                   onChange={(e) => onChange(e)}
                   value={name}
@@ -96,7 +111,7 @@ const Contact = () => {
               <div className="form-group">
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder="Your Email"
                   name="email"
                   onChange={(e) => onChange(e)}
                   value={email}
@@ -104,7 +119,7 @@ const Contact = () => {
               </div>
               <div className="form-group">
                 <textarea
-                  placeholder="Message"
+                  placeholder="Your Message"
                   name="message"
                   onChange={(e) => onChange(e)}
                   value={message}
@@ -112,7 +127,7 @@ const Contact = () => {
               </div>
               <div className="form-group">
                 <button type="submit" className="cf-btn">
-                  Send me message
+                  Send Message
                 </button>
               </div>
             </form>
