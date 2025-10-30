@@ -28,21 +28,21 @@ const Home = () => {
             >
               <div className="experence">
                 <h2>
-                  <Counter end={7} />+
+                  <Counter end={4} />+
                 </h2>
                 <p className="font-20px">Years Experience</p>
               </div>
               <div className="project">
                 <h2>
-                  <Counter end={300} />+
+                  <Counter end={100} />+
                 </h2>
                 <p className="font-20px">Complete Project</p>
               </div>
               <div className="clients">
                 <h2>
-                  <Counter end={135} />+
+                  <Counter end={85} />+
                 </h2>
-                <p className="font-20px">Heppy Client</p>
+                <p className="font-20px">Happy Client</p>
               </div>
             </div>
           </div>
