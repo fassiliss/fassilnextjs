@@ -28,11 +28,7 @@ const Footer = () => {
               fontWeight: "500",
             }}
           >
-            Fassil Tsegaye{" "}
-            <i
-              className="fa-brands fa-github"
-              style={{ marginLeft: "5px" }}
-            ></i>
+            Fassil Tsegaye
           </a>{" "}
           © {new Date().getFullYear()}
         </div>
