@@ -10,7 +10,7 @@ const Header = () => {
         <div className="container">
           <div className="logo">
             <a href="#home">
-              Fassil<span className="text-primary">.dev</span>
+              Fassiltsegaye<span className="text-primary">.com</span>
             </a>
           </div>
           <ul className={`menus ${toggle ? "d-block" : ""}`}>
