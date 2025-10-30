@@ -23,12 +23,16 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              color: "#667eea",
-              textDecoration: "underline",
+              color: "#fff",
+              textDecoration: "none",
               fontWeight: "500",
             }}
           >
-            Fassil Tsegaye
+            Fassil Tsegaye{" "}
+            <i
+              className="fa-brands fa-github"
+              style={{ marginLeft: "5px" }}
+            ></i>
           </a>{" "}
           © {new Date().getFullYear()}
         </div>
