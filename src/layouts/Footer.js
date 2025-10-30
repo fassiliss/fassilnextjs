@@ -22,8 +22,17 @@ const Footer = () => {
             href="https://github.com/fassiliss"
             target="_blank"
             rel="noopener noreferrer"
+            style={{
+              color: "#667eea",
+              textDecoration: "underline",
+              fontWeight: "500",
+            }}
           >
-            Fassil Tsegaye
+            Fassil Tsegaye{" "}
+            <i
+              className="fa-brands fa-github"
+              style={{ marginLeft: "5px" }}
+            ></i>
           </a>{" "}
           © {new Date().getFullYear()}
         </div>
