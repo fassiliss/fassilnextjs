@@ -43,9 +43,9 @@ const Services = () => {
                   <p className="tech-stack">
                     <strong>Tech:</strong> React, Next.js, Node.js, MongoDB, AWS
                   </p>
-                  <p className="price">
+                  {/* <p className="price">
                     Starting at <span>$500</span>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -71,9 +71,9 @@ const Services = () => {
                     <strong>Tech:</strong> React, Next.js, TypeScript, Tailwind
                     CSS
                   </p>
-                  <p className="price">
+                  {/* <p className="price">
                     Starting at <span>$300</span>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -98,9 +98,9 @@ const Services = () => {
                   <p className="tech-stack">
                     <strong>Tech:</strong> Node.js, Express, MongoDB, MySQL, AWS
                   </p>
-                  <p className="price">
+                  {/* <p className="price">
                     Starting at <span>$400</span>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
