@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST={"index.jsx -> @/src/components/Portfolio":{id:6524,files:["static/chunks/391.c6eeca109a092ca1.js","static/chunks/524.36165001b2f00732.js"]}};

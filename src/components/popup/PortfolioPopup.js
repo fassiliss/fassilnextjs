@@ -3,62 +3,68 @@ import { useContext } from "react";
 import Modal from "./Modal";
 
 const PortfolioPopup = () => {
-  const { portfolio_modal_show } = useContext(AxoContext);
+  const { portfolio_modal_show, portfolioData } = useContext(AxoContext);
+
+  // If no portfolio data, return null
+  if (!portfolioData) return null;
+
   return (
     <Modal close={portfolio_modal_show}>
       <div className="content">
         <div className="img">
           <img
-            src="/assets/images/portfolio/netflix-clone.png"
-            alt="Netflix Clone 2025"
+            src={portfolioData.image}
+            alt={portfolioData.title}
           />
         </div>
         <div className="des">
           <span>Personal Project</span>
-          <h4>Netflix Clone 2025</h4>
-          <p>
-            A fully functional Netflix clone built with modern web technologies.
-            This streaming platform replica features movie browsing, trailer
-            playback, and a responsive design that mirrors Netflix's user
-            experience.
-          </p>
-        <div className="project-details">
-  <p>
-    <strong>Technologies:</strong> React 19, Vite, Material UI, TMDB
-    API, Axios, React YouTube
-  </p>
-  <p>
-    <strong>Industry:</strong> Entertainment / Streaming
-  </p>
-  <p>
-    <strong>Date:</strong> 2025
-  </p>
-  <p>
-    <strong>Live Demo:</strong>{" "}
-    <a
-      href="https://fassiliss.github.io/Netflix-2025/"
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{ color: '#1e90ff', textDecoration: 'underline', cursor: 'pointer' }}
-    >
-      View Project
-    </a>
-  </p>
-  <p>
-    <strong>GitHub:</strong>{" "}
-    <a
-      href="https://github.com/fassiliss/Netflix-2025"
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{ color: '#1e90ff', textDecoration: 'underline', cursor: 'pointer' }}
-    >
-      View Code
-    </a>
-  </p>
-</div>
+          <h4>{portfolioData.title}</h4>
+          <p>{portfolioData.description}</p>
+          
+          <div className="project-details">
+            <p>
+              <strong>Technologies:</strong> {portfolioData.technologies.join(", ")}
+            </p>
+            <p>
+              <strong>Industry:</strong> Web Development
+            </p>
+            <p>
+              <strong>Date:</strong> 2025
+            </p>
+            
+            {portfolioData.liveUrl && portfolioData.liveUrl !== "#" && (
+              <p>
+                <strong>Live Demo:</strong>{" "}
+                <a
+                  href={portfolioData.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: '#1e90ff', textDecoration: 'underline', cursor: 'pointer' }}
+                >
+                  View Project
+                </a>
+              </p>
+            )}
+            
+            {portfolioData.githubUrl && portfolioData.githubUrl !== "#" && (
+              <p>
+                <strong>GitHub:</strong>{" "}
+                <a
+                  href={portfolioData.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: '#1e90ff', textDecoration: 'underline', cursor: 'pointer' }}
+                >
+                  View Code
+                </a>
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </Modal>
   );
 };
+
 export default PortfolioPopup;

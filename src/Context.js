@@ -8,7 +8,7 @@ const type = {
   BLOG: "BLOG",
   PORTFOLIO_MODAL: "PORTFOLIO_MODAL",
 };
-const { BLOG, COLOR, PORTFOLIO_MODAL } = type;
+const { BLOG, COLOR, PORTFOLIO_MODAL, PORTFOLIO_DATA } = type;
 
 // Initial Value
 const initialState = {
@@ -37,6 +37,7 @@ const initialState = {
     },
   ],
   portfolio_modal: false,
+  portfolioData: null,
 };
 
 // Reducer
@@ -52,6 +53,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         portfolio_modal: payload,
+      };
+    case PORTFOLIO_DATA: // Add this case
+      return {
+        ...state,
+        portfolioData: payload,
       };
     default:
       return state;
@@ -75,8 +81,15 @@ const AxoState = ({ children }) => {
       payload: value,
     });
   }, []);
+  const setPortfolioData = useCallback((value) => {
+    // Add this function
+    dispatch({
+      type: PORTFOLIO_DATA,
+      payload: value,
+    });
+  }, []);
 
-  const { color, blog, blogs, portfolio_modal } = state;
+  const { color, blog, blogs, portfolio_modal, portfolioData } = state;
   return (
     <AxoContext.Provider
       value={{
@@ -85,6 +98,8 @@ const AxoState = ({ children }) => {
         blogDetails,
         portfolio_modal,
         portfolio_modal_show,
+        portfolioData, // Add this
+        setPortfolioData, // Add this
       }}
     >
       {children}
