@@ -76,6 +76,24 @@ const Portfolio = () => {
               "Tailwind CSS",
           ],
       },
+      {
+          id: 5,
+          title: "Ajora Kitchen",
+          categories: ["details", "restaurant", "fullstack"],
+          image: "/assets/images/portfolio/ajorakitchen.png",
+          liveUrl: "https://www.ajorakitchen.org",
+          githubUrl: "https://github.com/fassiliss/ajorakitchen-nextjs",
+          description:
+              "Full-stack restaurant website with admin authentication, menu management system, and responsive design. Features protected admin routes, dynamic content, and modern UI/UX.",
+          technologies: [
+              "Next.js",
+              "React",
+              "Authentication",
+              "Admin Panel",
+              "Responsive Design",
+              "Tailwind CSS",
+          ],
+      },
   ];
 
   useEffect(() => {
@@ -167,6 +185,12 @@ const Portfolio = () => {
               onClick={handleFilterKeyChange("voting")}
               >
               Voting System
+          </a>
+              <a
+              className={`c-pointer ${activeBtn("restaurant")}`}
+              onClick={handleFilterKeyChange("restaurant")}
+              >
+              Restaurant
           </a>
           </div>
 
