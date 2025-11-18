@@ -58,6 +58,24 @@ const Portfolio = () => {
         "React Hook Form",
       ],
     },
+      {
+          id: 4,
+          title: "iVoteForIt - Voting System",
+          categories: ["details", "fullstack", "voting"],
+          image: "/assets/images/portfolio/ivoteforit.png",
+          liveUrl: "https://ivoteforit.com",
+          githubUrl: "https://github.com/fassiliss/voting-app",
+          description:
+              "Secure digital voting platform with QR code generation, device fingerprinting, and real-time results. Features admin panel for candidate management, email validation, and one-vote-per-device security.",
+          technologies: [
+              "Next.js 16",
+              "TypeScript",
+              "Supabase",
+              "QR Code Generation",
+              "Device Fingerprinting",
+              "Tailwind CSS",
+          ],
+      },
   ];
 
   useEffect(() => {
@@ -144,6 +162,12 @@ const Portfolio = () => {
             >
               Social
             </a>
+              <a
+              className={`c-pointer ${activeBtn("voting")}`}
+              onClick={handleFilterKeyChange("voting")}
+              >
+              Voting System
+          </a>
           </div>
 
           <div className="portfolio-items wow fadeInUp">
