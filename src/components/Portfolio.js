@@ -94,6 +94,46 @@ const Portfolio = () => {
               "Tailwind CSS",
           ],
       },
+      {
+          id: 6,
+          title: "Unsatisfied Youth Group",
+          categories: ["details", "ministry", "fullstack"],
+          image: "/assets/images/portfolio/unsatisfied.png",
+          liveUrl: "https://unsatisfiedlife.com",
+          githubUrl: "https://github.com/fassiliss/church-youth-group",
+          description:
+              "Modern, mobile-responsive website for church youth ministry serving ages 12-18. Features custom logo design with 'X over un' concept, event management system, sermon library with filtering, contact forms, and leadership profiles. Built with Next.js and deployed on Vercel.",
+          technologies: [
+              "Next.js 16",
+              "TypeScript",
+              "React",
+              "Tailwind CSS",
+              "Vercel",
+              "SEO Optimization",
+              "Responsive Design",
+          ],
+      },
+      {
+          id: 7,
+          title: "Tsega Church Website",
+          categories: ["details", "church", "fullstack"],
+          image: "/assets/images/portfolio/tsega-church.png",
+          liveUrl: "https://tsegachurch-site-y6w6.vercel.app",
+          githubUrl: "https://github.com/fassiliss/tsegachurch-site", // Update if different
+          description:
+              "Full-featured church website with event management, sermon library, and ministry information. Features dropdown navigation, Google Maps integration, dark mode toggle, and responsive design. Built with React/Next.js and deployed on Vercel with automatic CI/CD.",
+          technologies: [
+              "React",
+              "Next.js",
+              "Vercel",
+              "Tailwind CSS",
+              "Google Maps API",
+              "Dark Mode",
+              "Responsive Design",
+              "CI/CD",
+          ],
+      }
+
   ];
 
   useEffect(() => {
