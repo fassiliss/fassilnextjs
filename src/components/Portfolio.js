@@ -132,7 +132,26 @@ const Portfolio = () => {
               "Responsive Design",
               "CI/CD",
           ],
-      }
+      },
+      {
+          id: 8,
+          title: "AutoShop - Car Dealership",
+          categories: ["details", "fullstack", "ecommerce"],
+          image: "/assets/images/portfolio/car-shop.png",
+          liveUrl: "https://car-shop-nextjs-chi.vercel.app",
+          githubUrl: "https://github.com/fassiliss/car-shop-nextjs",
+          description:
+              "Modern, full-stack car dealership website with dynamic inventory system, advanced filtering, and individual car detail pages. Features 18+ vehicles, price/year/transmission filters, and fully responsive design. Built with Next.js 15 and deployed on Vercel.",
+          technologies: [
+              "Next.js 15",
+              "TypeScript",
+              "React",
+              "Tailwind CSS",
+              "Vercel",
+              "Image Optimization",
+              "Responsive Design",
+          ],
+      },
 
   ];
 
