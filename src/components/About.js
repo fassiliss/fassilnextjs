@@ -31,120 +31,40 @@ const About = () => {
               writing clean, maintainable code and delivering exceptional user
               experiences.
             </p>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "8px",
-                marginTop: "20px",
-                marginBottom: "20px",
-              }}
-            >
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "6px 14px",
-                  borderRadius: "20px",
-                  fontSize: "13px",
-                  fontWeight: "500",
-                }}
+              <div
+                  style={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      gap: "8px",
+                      marginTop: "20px",
+                      marginBottom: "20px",
+                  }}
               >
-                React
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "6px 14px",
-                  borderRadius: "20px",
-                  fontSize: "13px",
-                  fontWeight: "500",
-                }}
-              >
-                Next.js
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "6px 14px",
-                  borderRadius: "20px",
-                  fontSize: "13px",
-                  fontWeight: "500",
-                }}
-              >
-                Node.js
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "6px 14px",
-                  borderRadius: "20px",
-                  fontSize: "13px",
-                  fontWeight: "500",
-                }}
-              >
-                JavaScript
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "6px 14px",
-                  borderRadius: "20px",
-                  fontSize: "13px",
-                  fontWeight: "500",
-                }}
-              >
-                TypeScript
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "6px 14px",
-                  borderRadius: "20px",
-                  fontSize: "13px",
-                  fontWeight: "500",
-                }}
-              >
-                MongoDB
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "6px 14px",
-                  borderRadius: "20px",
-                  fontSize: "13px",
-                  fontWeight: "500",
-                }}
-              >
-                AWS
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "6px 14px",
-                  borderRadius: "20px",
-                  fontSize: "13px",
-                  fontWeight: "500",
-                }}
-              >
-                Git
-              </span>
-            </div>
+  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
+    React 19
+  </span>
+                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
+    Next.js 16
+  </span>
+                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
+    TypeScript
+  </span>
+                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
+    JavaScript
+  </span>
+                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
+    MongoDB
+  </span>
+                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
+    Supabase
+  </span>
+                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
+    Firebase
+  </span>
+                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
+    Vercel
+  </span>
+              </div>
             <div className="d-flex align-center btn-container">
               <a href="#contact" className="cf-btn read-more">
                 Get In Touch
