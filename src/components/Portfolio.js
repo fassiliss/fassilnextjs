@@ -178,7 +178,7 @@ const Portfolio = () => {
             id: 10,
             title: "Smyrna Soccer - Team Chat",
             categories: ["details", "fullstack", "social"],
-            image: "/assets/images/portfolio/smyrna-soccer.png",
+            image: "/assets/images/portfolio/smyrnasoccer.png",
             liveUrl: "https://smyrnasoccer.com",
             githubUrl: "https://github.com/fassiliss/sunday-soccer",
             description:
