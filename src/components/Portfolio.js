@@ -174,6 +174,27 @@ const Portfolio = () => {
                 "Dark Mode",
             ],
         },
+        {
+            id: 10,
+            title: "Smyrna Soccer - Team Chat",
+            categories: ["details", "fullstack", "social"],
+            image: "/assets/images/portfolio/smyrna-soccer.png",
+            liveUrl: "https://smyrnasoccer.com",
+            githubUrl: "https://github.com/fassiliss/sunday-soccer",
+            description:
+                "Real-time team chat application for soccer team communication. Features multi-channel messaging, emoji reactions, image sharing, user profiles with avatar uploads, and online presence indicators. Built with Next.js 16 and Supabase for real-time subscriptions, authentication, and storage.",
+            technologies: [
+                "Next.js 16",
+                "React 19",
+                "TypeScript",
+                "Supabase",
+                "Real-time Subscriptions",
+                "Tailwind CSS",
+                "Vercel",
+                "Authentication",
+                "File Storage",
+            ],
+        },
     ];
 
   useEffect(() => {
@@ -260,6 +281,12 @@ const Portfolio = () => {
 >
     Social
     </a>
+                <a
+                className={`c-pointer ${activeBtn("social")}`}
+                onClick={handleFilterKeyChange("social")}
+                >
+                Social/Chat
+            </a>
     <a
     className={`c-pointer ${activeBtn("voting")}`}
     onClick={handleFilterKeyChange("voting")}
