@@ -192,6 +192,7 @@ const Portfolio = () => {
                 "Tailwind CSS",
                 "Vercel",
                 "Authentication",
+                "Admin Dashboard",
                 "File Storage",
             ],
         },
