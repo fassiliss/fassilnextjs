@@ -204,14 +204,15 @@ const Portfolio = () => {
             liveUrl: "https://personal-finance-app-q6vw.vercel.app",
             githubUrl: "https://github.com/fassiliss/personalfinance-app",
             description:
-                "Comprehensive personal finance tracker with multiple accounts, transaction management, budget tracking with progress bars, recurring bills/income, CSV import/export, and dark/light mode. Features date range filtering, account detail pages with charts, and responsive design. All data persists locally with localStorage.",
+                "Full-stack personal finance tracker with Supabase backend and user authentication. Features multiple accounts, transaction management, budget tracking with progress bars, recurring bills/income, CSV import/export, and dark/light mode. Includes date range filtering, account detail pages with charts, delete confirmations, and responsive design. Data syncs across devices with cloud storage.",
             technologies: [
                 "Next.js 16",
                 "React 19",
                 "TypeScript",
                 "Tailwind CSS v4",
-                "Context API",
-                "localStorage",
+                "Supabase",
+                "PostgreSQL",
+                "Authentication",
                 "Vercel",
                 "Dark Mode",
                 "Responsive Design",
