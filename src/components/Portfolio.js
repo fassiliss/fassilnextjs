@@ -196,6 +196,27 @@ const Portfolio = () => {
                 "File Storage",
             ],
         },
+        {
+            id: 11,
+            title: "Personal Finance App",
+            categories: ["details", "fullstack", "finance"],
+            image: "/assets/images/portfolio/finance.png",
+            liveUrl: "https://personal-finance-app-q6vw.vercel.app",
+            githubUrl: "https://github.com/fassiliss/personalfinance-app",
+            description:
+                "Comprehensive personal finance tracker with multiple accounts, transaction management, budget tracking with progress bars, recurring bills/income, CSV import/export, and dark/light mode. Features date range filtering, account detail pages with charts, and responsive design. All data persists locally with localStorage.",
+            technologies: [
+                "Next.js 16",
+                "React 19",
+                "TypeScript",
+                "Tailwind CSS v4",
+                "Context API",
+                "localStorage",
+                "Vercel",
+                "Dark Mode",
+                "Responsive Design",
+            ],
+        },
     ];
 
   useEffect(() => {
@@ -270,6 +291,12 @@ const Portfolio = () => {
           >
           Streaming
       </a>
+                <a
+                className={`c-pointer ${activeBtn("finance")}`}
+                onClick={handleFilterKeyChange("finance")}
+                >
+                Finance
+            </a>
        <a
         className={`c-pointer ${activeBtn("fullstack")}`}
         onClick={handleFilterKeyChange("fullstack")}
