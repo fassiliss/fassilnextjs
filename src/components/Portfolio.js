@@ -182,7 +182,7 @@ const Portfolio = () => {
             liveUrl: "https://smyrnasoccer.com",
             githubUrl: "https://github.com/fassiliss/sunday-soccer",
             description:
-                "Real-time team chat application for soccer team communication. Features multi-channel messaging, emoji reactions, image sharing, user profiles with avatar uploads, and online presence indicators. Built with Next.js 16 and Supabase for real-time subscriptions, authentication, and storage.",
+                "Real-time team chat application for soccer team communication. Features multi-channel messaging, emoji reactions, image sharing, user profiles with avatar uploads, online presence indicators, and push notifications. Installable as a Progressive Web App (PWA) on mobile devices. Built with Next.js 16 and Supabase for real-time subscriptions, authentication, and storage.",
             technologies: [
                 "Next.js 16",
                 "React 19",
@@ -194,6 +194,8 @@ const Portfolio = () => {
                 "Authentication",
                 "Admin Dashboard",
                 "File Storage",
+                "PWA",
+                "Push Notifications",
             ],
         },
         {
