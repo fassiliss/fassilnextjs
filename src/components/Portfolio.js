@@ -224,6 +224,27 @@ const Portfolio = () => {
                 "Vercel",
             ],
         },
+        {
+            id: 12,
+            title: "Titi Creation Catering - Food Ordering Website",
+            categories: ["details", "fullstack", "food"],
+            image: "/assets/images/portfolio/titi.png",
+            liveUrl: "https://titicreation.com",
+            githubUrl: "https://github.com/fassiliss/titi-creation",
+            description:
+                "Full-stack food ordering website for an Ethio-Italian cuisine catering business in Nashville. Features an online menu system with shopping cart functionality using Zustand state management with localStorage persistence. Customers can browse menu items, add to cart, and submit orders with event details for birthdays, graduations, weddings, and corporate events. Includes real-time order submission to Supabase database, responsive design for mobile and desktop, custom image slider for hero section, and SEO optimization. Built with a professional restaurant template customized with gold/dark theme branding.",
+            technologies: [
+                "Next.js 13",
+                "React",
+                "Supabase",
+                "PostgreSQL",
+                "Zustand",
+                "Swiper.js",
+                "Bootstrap 5",
+                "CSS3",
+                "Vercel",
+            ],
+        },
     ];
 
   useEffect(() => {
