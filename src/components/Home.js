@@ -28,7 +28,7 @@ const Home = () => {
             >
               <div className="experence">
                 <h2>
-                  <Counter end={4} />+
+                  <Counter end={5} />+
                 </h2>
                 <p className="font-20px">Years Experience</p>
               </div>
