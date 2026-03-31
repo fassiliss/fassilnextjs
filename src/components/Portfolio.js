@@ -256,6 +256,25 @@ const Portfolio = () => {
         "Mobile car detailing website with service pages, gallery, contact/quote form, and admin login demo. Built with Next.js and deployed on Vercel.",
       technologies: ["Next.js", "React", "TypeScript", "Vercel"],
     },
+    {
+      id: 14,
+      title: "Good Deeds Alliance Charity Site",
+      categories: ["details", "charity", "fullstack"],
+      image: "/assets/images/portfolio/gooddeeds.png",
+      liveUrl: "https://gooddeedsalliance.org",
+      githubUrl: "https://github.com/fassiliss/getu-charity-site",
+      description:
+        "Modern charity website with donation page, responsive layout, ministry-style branding, reusable Next.js components, and a mock Stripe-ready donation flow.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Bootstrap",
+        "Responsive Design",
+        "Stripe Ready",
+        "Vercel",
+      ],
+    },
   ];
 
   useEffect(() => {
@@ -372,6 +391,12 @@ const Portfolio = () => {
               onClick={handleFilterKeyChange("automotive")}
             >
               Automotive
+            </a>
+            <a
+              className={`c-pointer ${activeBtn("charity")}`}
+              onClick={handleFilterKeyChange("charity")}
+            >
+              Charity
             </a>
           </div>
 
