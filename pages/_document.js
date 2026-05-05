@@ -4,7 +4,11 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Fassil Tsegaye Full Stack Developer</title>
+        <meta
+          name="description"
+          content="Portfolio of Fassil Tsegaye, a full stack web developer based in Smyrna, Tennessee."
+        />
+        <link rel="icon" href="/assets/images/author/about2.png" />
         <link rel="stylesheet" href="assets/css/flaticon.css" />
         <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />

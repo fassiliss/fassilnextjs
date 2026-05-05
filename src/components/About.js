@@ -1,3 +1,50 @@
+const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
+  "Node.js",
+  "MongoDB",
+  "Supabase",
+  "Firebase",
+  "Vercel",
+  "REST APIs",
+];
+
+const skillStyle = {
+  background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+  color: "#fff",
+  padding: "8px 16px",
+  borderRadius: "20px",
+  fontSize: "14px",
+  fontWeight: "500",
+};
+
+const SkillsList = ({ compact = false }) => (
+  <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+      gap: compact ? "8px" : "10px",
+      marginTop: compact ? "20px" : 0,
+      marginBottom: compact ? "20px" : "30px",
+    }}
+  >
+    {skills.map((skill) => (
+      <span
+        key={skill}
+        style={{
+          ...skillStyle,
+          padding: compact ? "6px 14px" : skillStyle.padding,
+          fontSize: compact ? "13px" : skillStyle.fontSize,
+        }}
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+);
+
 const About = () => {
   return (
     <section id="about">
@@ -8,8 +55,8 @@ const About = () => {
               <div className="image-bg moving-effect" />
               <div className="image-area">
                 <img
-                  src="./assets/images/author/about2.png"
-                  alt="Fassil Tsegaye"
+                  src="./assets/images/author/about1.png"
+                  alt="Developer workstation"
                 />
               </div>
             </div>
@@ -20,54 +67,19 @@ const About = () => {
               <h2>Full Stack Web Developer</h2>
             </div>
             <p>
-              I'm a passionate Full Stack Web Developer with expertise in
-              building modern, scalable web applications. I specialize in React,
-              Next.js, Node.js, and cloud technologies, creating solutions that
-              solve real business problems.
+              I create practical, polished web applications with React,
+              Next.js, Node.js, and modern cloud platforms. My work covers the
+              full development cycle, from responsive interfaces and APIs to
+              authentication, databases, admin dashboards, and deployment.
               <br />
               <br />
-              From frontend user interfaces to backend APIs and databases, I
-              handle the complete development lifecycle. I'm committed to
-              writing clean, maintainable code and delivering exceptional user
-              experiences.
+              I focus on clean code, clear communication, and products that are
+              easy for real people to use.
             </p>
-              <div
-                  style={{
-                      display: "flex",
-                      flexWrap: "wrap",
-                      gap: "8px",
-                      marginTop: "20px",
-                      marginBottom: "20px",
-                  }}
-              >
-  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
-    React 19
-  </span>
-                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
-    Next.js 16
-  </span>
-                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
-    TypeScript
-  </span>
-                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
-    JavaScript
-  </span>
-                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
-    MongoDB
-  </span>
-                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
-    Supabase
-  </span>
-                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
-    Firebase
-  </span>
-                  <span style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", color: "#fff", padding: "6px 14px", borderRadius: "20px", fontSize: "13px", fontWeight: "500" }}>
-    Vercel
-  </span>
-              </div>
+            <SkillsList compact />
             <div className="d-flex align-center btn-container">
-              <a href="#contact" className="cf-btn read-more">
-                Get In Touch
+              <a href="/resume.pdf" className="cf-btn read-more" download>
+                Download CV
               </a>
               <div className="d-flex watch-video align-center">
                 <a
@@ -75,6 +87,7 @@ const About = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="play-btn"
+                  aria-label="View Fassil Tsegaye on GitHub"
                 >
                   <i className="fa-brands fa-github" />
                 </a>
@@ -101,18 +114,17 @@ const About = () => {
               </div>
             </div>
             <p>
-              I'm a Full Stack Web Developer with expertise in building modern,
-              responsive web applications. I manage everything from user
-              interface design to server architecture and database management.
-              With a focus on clean code and best practices, I create solutions
-              that are both scalable and maintainable.
+              I build responsive web applications with thoughtful interfaces,
+              secure backends, and maintainable code. I am comfortable taking a
+              project from idea to launch and supporting the details that make
+              it useful after release.
             </p>
             <ul className="about-details">
               <li>
-                <span>Location :</span> Franklin, Tennessee, US
+                <span>Location :</span> Smyrna, Tennessee, US
               </li>
               <li>
-                <span>Email :</span> fassil661@gmail.com
+                <span>Email :</span> fassiliss@gmail.com
               </li>
               <li>
                 <span>GitHub :</span> github.com/fassiliss
@@ -124,198 +136,8 @@ const About = () => {
             <h4 style={{ marginTop: "30px", marginBottom: "15px" }}>
               Technical Skills
             </h4>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "10px",
-                marginBottom: "30px",
-              }}
-            >
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                React
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                Next.js
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                Node.js
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                Express
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                JavaScript
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                TypeScript
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                MongoDB
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                MySQL
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                AWS
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                Firebase
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                Git
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                REST APIs
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                Tailwind CSS
-              </span>
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                  color: "#fff",
-                  padding: "8px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                }}
-              >
-                Material UI
-              </span>
-            </div>
-            <a href="#contact" className="cf-btn">
+            <SkillsList />
+            <a href="/resume.pdf" className="cf-btn" download>
               Download CV
             </a>
           </div>

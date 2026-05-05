@@ -102,7 +102,7 @@ const Portfolio = () => {
       liveUrl: "https://unsatisfiedlife.com",
       githubUrl: "https://github.com/fassiliss/church-youth-group",
       description:
-        "Modern, mobile-responsive website for church youth ministry serving ages 12-18. Features custom logo design with 'X over un' concept, event management system, sermon library with filtering, contact forms, and leadership profiles. Built with Next.js and deployed on Vercel.",
+        "Mobile-responsive youth ministry website with event management, sermon filtering, contact forms, leadership profiles, and custom branding.",
       technologies: [
         "Next.js 16",
         "TypeScript",
@@ -121,7 +121,7 @@ const Portfolio = () => {
       liveUrl: "https://tsegachurch-site-y6w6.vercel.app",
       githubUrl: "https://github.com/fassiliss/tsegachurch-site",
       description:
-        "Full-featured church website with event management, sermon library, and ministry information. Features dropdown navigation, Google Maps integration, dark mode toggle, and responsive design. Built with React/Next.js and deployed on Vercel with automatic CI/CD.",
+        "Church website with event management, sermon library, ministry pages, dropdown navigation, Google Maps integration, dark mode, and responsive design.",
       technologies: [
         "React",
         "Next.js",
@@ -141,7 +141,7 @@ const Portfolio = () => {
       liveUrl: "https://car-shop-nextjs-chi.vercel.app",
       githubUrl: "https://github.com/fassiliss/car-shop-nextjs",
       description:
-        "Modern, full-stack car dealership website with dynamic inventory system, advanced filtering, and individual car detail pages. Features 18+ vehicles, price/year/transmission filters, and fully responsive design. Built with Next.js 15 and deployed on Vercel.",
+        "Car dealership website with dynamic inventory, vehicle detail pages, advanced filters, image optimization, and responsive design.",
       technologies: [
         "Next.js 15",
         "TypeScript",
@@ -160,7 +160,7 @@ const Portfolio = () => {
       liveUrl: "https://wabi-auto.vercel.app",
       githubUrl: "https://github.com/fassiliss/wabi-auto",
       description:
-        "Full-stack auto service and repair website with comprehensive booking system, blog management, customer testimonials, and admin dashboard. Features email notifications via Resend API, dark mode toggle, mobile-responsive hamburger menu, and MongoDB Atlas integration for data persistence. Includes service request forms, appointment scheduling with status tracking (scheduled → checked-in → in-progress → completed), and automated customer notifications.",
+        "Auto service website with appointment scheduling, service request forms, status tracking, admin tools, customer notifications, blog management, and MongoDB data storage.",
       technologies: [
         "Next.js 16",
         "React 19",
@@ -182,7 +182,7 @@ const Portfolio = () => {
       liveUrl: "https://smyrnasoccer.com",
       githubUrl: "https://github.com/fassiliss/sunday-soccer",
       description:
-        "Real-time team chat application for soccer team communication. Features multi-channel messaging, emoji reactions, image sharing, user profiles with avatar uploads, online presence indicators, and push notifications. Installable as a Progressive Web App (PWA) on mobile devices. Built with Next.js 16 and Supabase for real-time subscriptions, authentication, and storage.",
+        "Real-time team chat app with channels, reactions, image sharing, user profiles, online presence, push notifications, and PWA support.",
       technologies: [
         "Next.js 16",
         "React 19",
@@ -206,7 +206,7 @@ const Portfolio = () => {
       liveUrl: "https://personal-finance-app-q6vw.vercel.app",
       githubUrl: "https://github.com/fassiliss/personalfinance-app",
       description:
-        "Full-stack personal finance tracker with secure multi-user authentication including Google OAuth and email/password login. Features multiple account types, transaction management with category tracking, budget progress monitoring, and recurring bills/income automation. Includes receipt scanning with OCR for tax tracking, PDF report exports, CSV import/export, and real-time data sync across devices. Admin dashboard with user approval system and email notifications for new signups. Built as a Progressive Web App (PWA) installable on mobile devices with responsive hamburger menu navigation and dark/light mode support.",
+        "Personal finance tracker with multi-user authentication, account and transaction management, budgeting, recurring bills, OCR receipt scanning, exports, and real-time sync.",
       technologies: [
         "Next.js 16",
         "React 19",
@@ -226,13 +226,13 @@ const Portfolio = () => {
     },
     {
       id: 12,
-      title: "Titi Creation Catering - Food Ordering Website",
+      title: "Titi Creation Catering",
       categories: ["details", "fullstack", "food"],
       image: "/assets/images/portfolio/titi.png",
       liveUrl: "https://titicreation.com",
       githubUrl: "https://github.com/fassiliss/titi-creation",
       description:
-        "Full-stack food ordering website for an Ethio-Italian cuisine catering business in Nashville. Features an online menu system with shopping cart functionality using Zustand state management with localStorage persistence. Customers can browse menu items, add to cart, and submit orders with event details for birthdays, graduations, weddings, and corporate events. Includes real-time order submission to Supabase database, responsive design for mobile and desktop, custom image slider for hero section, and SEO optimization. Built with a professional restaurant template customized with gold/dark theme branding.",
+        "Food ordering website for an Ethio-Italian catering business with menu browsing, cart functionality, event order forms, Supabase order storage, and responsive design.",
       technologies: [
         "Next.js 13",
         "React",
@@ -365,12 +365,6 @@ const Portfolio = () => {
               className={`c-pointer ${activeBtn("social")}`}
               onClick={handleFilterKeyChange("social")}
             >
-              Social
-            </a>
-            <a
-              className={`c-pointer ${activeBtn("social")}`}
-              onClick={handleFilterKeyChange("social")}
-            >
               Social/Chat
             </a>
             <a
@@ -385,7 +379,6 @@ const Portfolio = () => {
             >
               Restaurant
             </a>
-            {/* ADD THIS NEW BUTTON HERE 👇 */}
             <a
               className={`c-pointer ${activeBtn("automotive")}`}
               onClick={handleFilterKeyChange("automotive")}

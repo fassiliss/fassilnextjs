@@ -12,6 +12,7 @@ import Header from "@/src/layouts/Header";
 import ScrollTop from "@/src/layouts/ScrollTop";
 import { axo } from "@/src/utils";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import { Fragment, useContext, useEffect } from "react";
 const Portfolio = dynamic(() => import("@/src/components/Portfolio"), {
   ssr: false,
@@ -28,6 +29,13 @@ const Index = () => {
   const { portfolio_modal } = useContext(AxoContext);
   return (
     <Fragment>
+      <Head>
+        <title>Fassil Tsegaye | Full Stack Web Developer</title>
+        <meta
+          name="description"
+          content="Fassil Tsegaye builds responsive full stack web applications with React, Next.js, Node.js, and modern cloud platforms."
+        />
+      </Head>
       {/* <PreLoader /> */}
       <VideoPopup />
       <ImageView />

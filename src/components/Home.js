@@ -49,7 +49,11 @@ const Home = () => {
           <div className="col-lg-5">
             <div className="hero-right">
               <div className="hero-right-bg" />
-              <img src="./assets/images/author/pf1.png" alt="image" />
+              <img
+                className="hero-portrait"
+                src="./assets/images/author/pf1.png"
+                alt="Fassil Tsegaye"
+              />
             </div>
           </div>
         </div>

@@ -2,6 +2,147 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+header .container .toggle {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgb(255 255 255 / 35%);
+  border-radius: 50%;
+  background: rgb(255 255 255 / 10%);
+  color: var(--cf-theme-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  background: rgb(255 255 255 / 20%);
+  border-color: rgb(255 255 255 / 55%);
+  transform: translateY(-1px);
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button,
+header button {
+  font-family: inherit;
+}
+
+body.dark-mode {
+  background: #18171d;
+  color: #c7c7d1;
+}
+
+body.dark-mode #services,
+body.dark-mode #about,
+body.dark-mode #portfolio,
+body.dark-mode #contact {
+  background: #18171d;
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode #about .watch-video a,
+body.dark-mode #about .watch-video p,
+body.dark-mode #contact .info-details li h4,
+body.dark-mode #portfolio .portfolio-overlay h3 {
+  color: var(--cf-theme-white);
+}
+
+body.dark-mode p,
+body.dark-mode #portfolio .portfolio-container .filter-btn,
+body.dark-mode #portfolio .portfolio-overlay p {
+  color: #b9b9c5;
+}
+
+body.dark-mode #services .service-card {
+  background: #22212a;
+  color: var(--cf-theme-white);
+  box-shadow: 0 20px 35px 10px rgb(0 0 0 / 18%);
+}
+
+body.dark-mode #services .service-card p {
+  color: #b9b9c5;
+}
+
+body.dark-mode #services .service-card:hover,
+body.dark-mode #services .service-card:hover p {
+  color: var(--cf-theme-white);
+}
+
+body.dark-mode #services .service-card .icon-container svg {
+  filter: invert(1);
+}
+
+body.dark-mode #about .author-image-container .image-area img,
+body.dark-mode #portfolio .portfolio-container .item {
+  box-shadow: 0 20px 35px 10px rgb(0 0 0 / 20%);
+}
+
+body.dark-mode #contact .contact-form {
+  background: #22212a;
+}
+
+body.dark-mode #contact .contact-form input,
+body.dark-mode #contact .contact-form textarea {
+  border-bottom-color: #686879;
+}
+
+body.dark-mode #contact .contact-form button {
+  background: var(--cf-theme-primary);
+}
+
+@media (max-width: 575px) {
+  #home h1 {
+    font-size: 54px;
+    line-height: 1.14;
+  }
+
+  #home .short-bio {
+    max-width: 340px;
+  }
+
+  .theme-toggle {
+    position: absolute;
+    top: -6px;
+    right: 58px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
+  .header-actions {
+    display: block;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px),
   only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {

@@ -35,13 +35,13 @@ const Services = () => {
                                 </div>
                                 <h3>Full Stack Web Development</h3>
                                 <p>
-                                    Building modern, responsive web applications using React,
-                                    Next.js, and cloud technologies. Complete solutions from
-                                    database to deployment with authentication and admin panels.
+                                    Building responsive web applications with clean interfaces,
+                                    reliable backends, authentication, admin tools, and production
+                                    deployment.
                                 </p>
                                 <div className="service-details">
                                     <p className="tech-stack">
-                                        <strong>Tech:</strong> Next.js 16, React 19, TypeScript, MongoDB, Supabase, Firebase, Vercel
+                                        <strong>Tech:</strong> Next.js, React, TypeScript, MongoDB, Supabase, Firebase, Vercel
                                     </p>
                                 </div>
                             </div>
@@ -59,13 +59,12 @@ const Services = () => {
                                 </div>
                                 <h3>Frontend Development</h3>
                                 <p>
-                                    Creating stunning, user-friendly interfaces with modern
-                                    frameworks. Responsive design with dark mode, mobile menus,
-                                    and exceptional user experience across all devices.
+                                    Creating fast, accessible interfaces that look polished on
+                                    mobile, tablet, and desktop screens.
                                 </p>
                                 <div className="service-details">
                                     <p className="tech-stack">
-                                        <strong>Tech:</strong> React, Next.js, TypeScript, Tailwind CSS v4, Material-UI, Bootstrap
+                                        <strong>Tech:</strong> React, Next.js, TypeScript, Tailwind CSS, Material UI, Bootstrap
                                     </p>
                                 </div>
                             </div>
@@ -83,13 +82,12 @@ const Services = () => {
                                 </div>
                                 <h3>Backend & API Development</h3>
                                 <p>
-                                    Developing robust backend systems, RESTful APIs, and database
-                                    solutions. Authentication, email notifications, payment
-                                    integration, and secure data management.
+                                    Developing APIs, database models, protected routes, email
+                                    flows, and secure data workflows for growing applications.
                                 </p>
                                 <div className="service-details">
                                     <p className="tech-stack">
-                                        <strong>Tech:</strong> Next.js API Routes, MongoDB Atlas, Mongoose, Supabase, Firebase, Resend Email
+                                        <strong>Tech:</strong> Next.js API Routes, MongoDB Atlas, Mongoose, Supabase, Firebase, Resend
                                     </p>
                                 </div>
                             </div>
@@ -107,9 +105,8 @@ const Services = () => {
                                 </div>
                                 <h3>E-Commerce Solutions</h3>
                                 <p>
-                                    Building complete e-commerce platforms with shopping carts,
-                                    payment processing, inventory management, and order tracking
-                                    systems.
+                                    Building online ordering and checkout experiences with carts,
+                                    product management, payment flows, and order tracking.
                                 </p>
                                 <div className="service-details">
                                     <p className="tech-stack">
@@ -131,9 +128,8 @@ const Services = () => {
                                 </div>
                                 <h3>Authentication & Admin Panels</h3>
                                 <p>
-                                    Implementing secure user authentication, role-based access
-                                    control, and comprehensive admin dashboards for content
-                                    management.
+                                    Implementing secure sign-in, protected pages, role-based
+                                    access, and admin dashboards for day-to-day management.
                                 </p>
                                 <div className="service-details">
                                     <p className="tech-stack">
@@ -155,9 +151,8 @@ const Services = () => {
                                 </div>
                                 <h3>API & Third-Party Integrations</h3>
                                 <p>
-                                    Integrating external APIs, payment gateways, email services,
-                                    maps, and other third-party services to enhance application
-                                    functionality.
+                                    Connecting applications to payments, email, maps, media APIs,
+                                    QR codes, and other services that support business workflows.
                                 </p>
                                 <div className="service-details">
                                     <p className="tech-stack">
