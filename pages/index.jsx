@@ -2,37 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Contact from "@/src/components/Contact";
+import projects from "@/src/data/portfolioProjects.json";
 import styles from "@/styles/Portfolio.module.css";
 
-const projects = [
-  {
-    name: "Smyrna Soccer",
-    category: "Community application",
-    description:
-      "A team communication app with channel-based conversations, messaging, and member presence. Built with Next.js and Supabase.",
-    image: "smyrnasoccer.png",
-    live: "https://smyrnasoccer.com",
-    source: "https://github.com/fassiliss/sunday-soccer",
-  },
-  {
-    name: "Ajora Kitchen",
-    category: "Restaurant website",
-    description:
-      "A responsive restaurant website that brings Ethiopian cuisine, menu browsing, and restaurant information into one clear experience.",
-    image: "ajorakitchen.png",
-    live: "https://www.ajorakitchen.org",
-    source: "https://github.com/fassiliss/ajorakitchen-nextjs",
-  },
-  {
-    name: "AutoShop",
-    category: "Vehicle discovery",
-    description:
-      "A Next.js dealership website with a browsable vehicle inventory and dedicated vehicle pages, designed for desktop and mobile.",
-    image: "car-shop.png",
-    live: "https://car-shop-nextjs-chi.vercel.app",
-    source: "https://github.com/fassiliss/car-shop-nextjs",
-  },
-];
 const capabilities = [
   {
     number: "01",
@@ -333,7 +305,7 @@ export default function Index() {
           className={`${styles.wrap} ${styles.section}`}
           aria-labelledby="work-title"
         >
-          <p className={styles.eyebrow}>02 / Selected work</p>
+          <p className={styles.eyebrow}>02 / Work</p>
           <div className={styles.titleRow}>
             <h2 id="work-title">Built for different needs.</h2>
             <a
@@ -354,13 +326,21 @@ export default function Index() {
                     alt={`${project.name} website preview`}
                     width={400}
                     height={300}
-                    sizes="(max-width: 700px) 100vw, 33vw"
+                    sizes="(max-width: 760px) 100vw, (max-width: 1000px) 50vw, 33vw"
                   />
                 </div>
                 <div className={styles.projectBody}>
                   <p className={styles.eyebrow}>{project.category}</p>
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>
+                  <ul
+                    className={styles.technologies}
+                    aria-label={`${project.name} technologies`}
+                  >
+                    {project.technologies.map((technology) => (
+                      <li key={technology}>{technology}</li>
+                    ))}
+                  </ul>
                   <div className={styles.projectLinks}>
                     <a
                       href={project.live}

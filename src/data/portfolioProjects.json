@@ -1,0 +1,250 @@
+[
+  {
+    "name": "Smyrna Soccer",
+    "category": "Community application",
+    "description": "A team communication app with channel-based conversations, messaging, and member presence. Built with Next.js and Supabase.",
+    "image": "smyrnasoccer.png",
+    "live": "https://smyrnasoccer.com",
+    "source": "https://github.com/fassiliss/sunday-soccer",
+    "technologies": [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Supabase",
+      "Real-time Subscriptions",
+      "Tailwind CSS",
+      "Vercel",
+      "Authentication",
+      "Admin Dashboard",
+      "File Storage",
+      "PWA",
+      "Push Notifications"
+    ]
+  },
+  {
+    "name": "Ajora Kitchen",
+    "category": "Restaurant website",
+    "description": "A responsive restaurant website that brings Ethiopian cuisine, menu browsing, and restaurant information into one clear experience.",
+    "image": "ajorakitchen.png",
+    "live": "https://www.ajorakitchen.org",
+    "source": "https://github.com/fassiliss/ajorakitchen-nextjs",
+    "technologies": [
+      "Next.js",
+      "React",
+      "Authentication",
+      "Admin Panel",
+      "Responsive Design",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "name": "AutoShop",
+    "category": "Vehicle discovery",
+    "description": "A Next.js dealership website with a browsable vehicle inventory and dedicated vehicle pages, designed for desktop and mobile.",
+    "image": "car-shop.png",
+    "live": "https://car-shop-nextjs-chi.vercel.app",
+    "source": "https://github.com/fassiliss/car-shop-nextjs",
+    "technologies": [
+      "Next.js 15",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Vercel",
+      "Image Optimization",
+      "Responsive Design"
+    ]
+  },
+  {
+    "name": "Netflix Clone 2025",
+    "category": "streaming",
+    "description": "Full-stack Netflix clone with React, Firebase authentication, and movie database integration. Features movie browsing, trailer playback, and responsive design.",
+    "image": "netflix-clone1.png",
+    "live": "https://fassiliss.github.io/Netflix-2025",
+    "source": "https://github.com/fassiliss/Netflix-2025",
+    "technologies": [
+      "React",
+      "Firebase",
+      "TMDB API",
+      "React Router",
+      "Vite"
+    ]
+  },
+  {
+    "name": "Amazon Clone 2025",
+    "category": "ecommerce",
+    "description": "E-commerce platform with shopping cart, Stripe payment integration, and Firebase backend. Complete checkout flow with real-time order tracking.",
+    "image": "amazon-clone.png",
+    "live": "https://fassiliss.github.io/Amazon-2025",
+    "source": "https://github.com/fassiliss/Amazon-2025",
+    "technologies": [
+      "React",
+      "Firebase",
+      "Stripe",
+      "Material-UI",
+      "Context API",
+      "Axios"
+    ]
+  },
+  {
+    "name": "Evangadi Forum",
+    "category": "social / fullstack",
+    "description": "Full-stack Q&A forum platform with JWT authentication, rich text editor, and real-time question/answer functionality. Built with modern React and Bootstrap.",
+    "image": "evangadi.png",
+    "live": "https://fassiliss.github.io/Evangadi-Forum",
+    "source": "https://github.com/fassiliss/Evangadi-Forum",
+    "technologies": [
+      "React",
+      "Axios",
+      "Bootstrap",
+      "React Router",
+      "JWT",
+      "Quill Editor",
+      "React Hook Form"
+    ]
+  },
+  {
+    "name": "iVoteForIt - Voting System",
+    "category": "fullstack / voting",
+    "description": "Secure digital voting platform with QR code generation, device fingerprinting, and real-time results. Features admin panel for candidate management, email validation, and one-vote-per-device security.",
+    "image": "ivoteforit.png",
+    "live": "https://ivoteforit.com",
+    "source": "https://github.com/fassiliss/voting-app",
+    "technologies": [
+      "Next.js 16",
+      "TypeScript",
+      "Supabase",
+      "QR Code Generation",
+      "Device Fingerprinting",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "name": "Unsatisfied Youth Group",
+    "category": "ministry / fullstack",
+    "description": "Mobile-responsive youth ministry website with event management, sermon filtering, contact forms, leadership profiles, and custom branding.",
+    "image": "unsatisfied.png",
+    "live": "https://unsatisfiedlife.com",
+    "source": "https://github.com/fassiliss/church-youth-group",
+    "technologies": [
+      "Next.js 16",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Vercel",
+      "SEO Optimization",
+      "Responsive Design"
+    ]
+  },
+  {
+    "name": "Tsega Church Website",
+    "category": "church / fullstack",
+    "description": "Church website with event management, sermon library, ministry pages, dropdown navigation, Google Maps integration, dark mode, and responsive design.",
+    "image": "tsega-church.png",
+    "live": "https://tsegachurch-site-y6w6.vercel.app",
+    "source": "https://github.com/fassiliss/tsegachurch-site",
+    "technologies": [
+      "React",
+      "Next.js",
+      "Vercel",
+      "Tailwind CSS",
+      "Google Maps API",
+      "Dark Mode",
+      "Responsive Design",
+      "CI/CD"
+    ]
+  },
+  {
+    "name": "Wabi Automotive - Auto Service",
+    "category": "fullstack / automotive",
+    "description": "Auto service website with appointment scheduling, service request forms, status tracking, admin tools, customer notifications, blog management, and MongoDB data storage.",
+    "image": "wabi-auto.png",
+    "live": "https://wabi-auto.vercel.app",
+    "source": "https://github.com/fassiliss/wabi-auto",
+    "technologies": [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "MongoDB Atlas",
+      "Mongoose",
+      "Resend Email API",
+      "Tailwind CSS v4",
+      "Vercel",
+      "Admin Authentication",
+      "Dark Mode"
+    ]
+  },
+  {
+    "name": "Personal Finance App",
+    "category": "fullstack / finance",
+    "description": "Personal finance tracker with multi-user authentication, account and transaction management, budgeting, recurring bills, OCR receipt scanning, exports, and real-time sync.",
+    "image": "finance.png",
+    "live": "https://personal-finance-app-q6vw.vercel.app",
+    "source": "https://github.com/fassiliss/personalfinance-app",
+    "technologies": [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Supabase",
+      "PostgreSQL",
+      "Google OAuth",
+      "Row-Level Security",
+      "Tesseract.js OCR",
+      "PWA",
+      "Brevo SMTP",
+      "jsPDF",
+      "Real-time Subscriptions",
+      "Vercel"
+    ]
+  },
+  {
+    "name": "Titi Creation Catering",
+    "category": "fullstack / food",
+    "description": "Food ordering website for an Ethio-Italian catering business with menu browsing, cart functionality, event order forms, Supabase order storage, and responsive design.",
+    "image": "titi.png",
+    "live": "https://titicreation.com",
+    "source": "https://github.com/fassiliss/titi-creation",
+    "technologies": [
+      "Next.js 13",
+      "React",
+      "Supabase",
+      "PostgreSQL",
+      "Zustand",
+      "Swiper.js",
+      "Bootstrap 5",
+      "CSS3",
+      "Vercel"
+    ]
+  },
+  {
+    "name": "Cross Shine Car Detailing",
+    "category": "automotive / fullstack",
+    "description": "Mobile car detailing website with service pages, gallery, contact/quote form, and admin login demo. Built with Next.js and deployed on Vercel.",
+    "image": "mesay-cardetail.png",
+    "live": "https://mesay-cardetail.vercel.app",
+    "source": "https://github.com/fassiliss/mesay-cardetail",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Vercel"
+    ]
+  },
+  {
+    "name": "Good Deeds Alliance Charity Site",
+    "category": "charity / fullstack",
+    "description": "Modern charity website with donation page, responsive layout, ministry-style branding, reusable Next.js components, and a mock Stripe-ready donation flow.",
+    "image": "gooddeeds.png",
+    "live": "https://gooddeedsalliance.org",
+    "source": "https://github.com/fassiliss/getu-charity-site",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Bootstrap",
+      "Responsive Design",
+      "Stripe Ready",
+      "Vercel"
+    ]
+  }
+]

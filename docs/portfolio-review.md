@@ -6,7 +6,7 @@ Base: `cc9e37851c4bb50e9fa782ecbff1aee0cdf2f0ec` (`main`, checked against GitHub
 
 ## Change
 
-The homepage now follows: introduction → SecureCycle case study → three selected projects → capabilities → background and earned credentials → contact.
+The homepage now follows: introduction → SecureCycle case study → portfolio projects → capabilities → background and earned credentials → contact.
 
 - Repositions the introduction around full-stack development, cybersecurity, and cloud security.
 - Removes the rendered experience, project, and client counters.
@@ -32,6 +32,8 @@ SecureCycle was reviewed at default-branch commit `5ab0fd90f9005ba4a3e2ba66ac7a9
 
 Selected project names, images and URLs come from the existing portfolio. Descriptions were narrowed using the connected repositories: Smyrna Soccer's channel page and message/presence hooks, Ajora Kitchen's menu page, and AutoShop's inventory navigation. All three live sites and their three source repository links returned HTTP 200 during review.
 
+The Work section now includes all 14 original projects, with the existing three cards retained first and 11 missing projects appended. The added projects reuse names, descriptions, images, technology lists and links verbatim from `src/components/Portfolio.js` on `main` at `cc9e37851c4bb50e9fa782ecbff1aee0cdf2f0ec`. Technology lists for the existing three cards also come from that source. Card data is in `src/data/portfolioProjects.json`; the grid uses three columns on desktop, two on tablet and one on mobile. The résumé file, download link and SecureCycle case study are unchanged by this addition.
+
 Code inspection verifies implementation exists; it does not verify deployed SecureCycle configuration or production operation. No metrics, clients, testimonials, compliance guarantees or project outcomes were added.
 
 ## Verification
@@ -40,6 +42,7 @@ Code inspection verifies implementation exists; it does not verify deployed Secu
 - Production HTTP checks: homepage and résumé returned 200.
 - Generated HTML checks: six sections in order, one H1, one meta description, valid internal anchors, nonempty image alt text, labeled required form fields, both requested certifications, explicit SecureCycle status, and no unsupported counters or AWS certification claim.
 - `git diff --check`: passed.
+- Expanded Work checks: all 14 original projects are included once; the 11 additions match original content; existing three cards are preserved; every referenced image exists; production HTML renders 14 cards and technology lists. The résumé checksum and download link are unchanged.
 - Browser visual and interaction checks: not completed. Browser runtime reported no browser available and an empty connected-browser list. Mobile layout, keyboard behavior, theme persistence and submission UI still need interactive review.
 - Email delivery: not tested; no real message sent. The existing EmailJS configuration is retained, with new pending/success/error handling.
 
