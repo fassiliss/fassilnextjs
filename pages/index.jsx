@@ -44,6 +44,7 @@ const capabilities = [
 export default function Index() {
   const [dark, setDark] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [projectsExpanded, setProjectsExpanded] = useState(false);
   useEffect(() => {
     try {
       setDark(localStorage.getItem("portfolio-theme") !== "light");
@@ -317,8 +318,8 @@ export default function Index() {
               Explore GitHub <span aria-hidden="true">↗</span>
             </a>
           </div>
-          <div className={styles.projectGrid}>
-            {projects.map((project) => (
+          <div id="work-projects" className={styles.projectGrid}>
+            {projects.slice(0, projectsExpanded ? projects.length : 3).map((project) => (
               <article key={project.name} className={styles.project}>
                 <div className={styles.projectImage}>
                   <Image
@@ -363,6 +364,19 @@ export default function Index() {
               </article>
             ))}
           </div>
+          {projects.length > 3 && (
+            <div className={styles.projectToggle}>
+              <button
+                type="button"
+                className={styles.primary}
+                aria-expanded={projectsExpanded}
+                aria-controls="work-projects"
+                onClick={() => setProjectsExpanded((expanded) => !expanded)}
+              >
+                {projectsExpanded ? "Show fewer projects" : "Show more projects"}
+              </button>
+            </div>
+          )}
         </section>
         <section
           id="services"
