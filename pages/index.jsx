@@ -295,6 +295,13 @@ export default function Index() {
                 Production configuration, backup and recovery planning, and
                 end-to-end launch checks remain launch requirements.
               </p>
+              <a
+                href="https://securecycletechnologies.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit SecureCycle Technologies <span aria-hidden="true">↗</span>
+              </a>
               <a href="#contact">
                 Ask about the project <span aria-hidden="true">↗</span>
               </a>
