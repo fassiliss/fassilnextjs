@@ -1,140 +1,127 @@
 import emailjs from "emailjs-com";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import styles from "@/styles/Portfolio.module.css";
 
-const Contact = () => {
-  const [mailData, setMailData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const { name, email, message } = mailData;
-  const [error, setError] = useState(null);
-
-  const onChange = (e) =>
-    setMailData({ ...mailData, [e.target.name]: e.target.value });
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (name.length === 0 || email.length === 0 || message.length === 0) {
-      setError(true);
-      clearError();
-    } else {
-      emailjs
-        .send(
-          "service_lo6vubh", // Your Service ID
-          "template_x7fo3e4", // Your Template ID
-          mailData,
-          "tBMNkDxrY_X92xYZP" // Your Public Key
-        )
-        .then(
-          (response) => {
-            setError(false);
-            clearError();
-            setMailData({ name: "", email: "", message: "" });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
+export default function Contact() {
+  const [status, setStatus] = useState("idle");
+  const sending = useRef(false);
+  async function onSubmit(event) {
+    event.preventDefault();
+    if (sending.current) return;
+    const form = event.currentTarget;
+    const data = Object.fromEntries(new FormData(form));
+    if (!data.name.trim() || !data.message.trim()) {
+      setStatus("invalid");
+      return;
     }
-  };
-
-  const clearError = () => {
-    setTimeout(() => {
-      setError(null);
-    }, 2000);
-  };
-
+    sending.current = true;
+    setStatus("sending");
+    try {
+      await emailjs.send(
+        "service_lo6vubh",
+        "template_x7fo3e4",
+        data,
+        "tBMNkDxrY_X92xYZP",
+      );
+      setStatus("sent");
+      form.reset();
+    } catch {
+      setStatus("error");
+    } finally {
+      sending.current = false;
+    }
+  }
   return (
-    <section id="contact">
-      <div className="container">
-        <div className="row align-center">
-          <div className="col-lg-6 wow fadeInLeft">
-            <div className="section-title left">
-              <p className="sub-title">Get in touch!</p>
-              <h2>Let's Work Together</h2>
-            </div>
-            <ul className="info-details">
-              <li>
-                <h4>Email</h4>
-                <p>
-                  <a
-                    href="mailto:fassiliss@gmail.com"
-                    style={{ color: "inherit", textDecoration: "none" }}
-                  >
-                    fassiliss@gmail.com
-                  </a>
-                </p>
-              </li>
-              <li>
-                <h4>Location</h4>
-                <p>Smyrna, Tennessee, USA</p>
-              </li>
-              <li>
-                <h4>Phone</h4>
-                <p>
-                  <a
-                    href="tel:+16154967208"
-                    style={{ color: "inherit", textDecoration: "none" }}
-                  >
-                    (615) 496-7208
-                  </a>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-6">
-            <form
-              action="#"
-              className="contact-form wow fadeInRight"
-              onSubmit={(e) => onSubmit(e)}
+    <section
+      id="contact"
+      className={styles.contact}
+      aria-labelledby="contact-title"
+    >
+      <div className={`${styles.wrap} ${styles.contactGrid}`}>
+        <div>
+          <p className={styles.eyebrow}>05 / Let’s connect</p>
+          <h2 id="contact-title">
+            Have a role or
+            <br />
+            project in mind?
+          </h2>
+          <p>
+            I’m open to full-stack development opportunities and conversations
+            about application and cloud security.
+          </p>
+          <a className={styles.contactEmail} href="mailto:fassiliss@gmail.com">
+            fassiliss@gmail.com <span aria-hidden="true">↗</span>
+          </a>
+          <div className={styles.contactLinks}>
+            <a
+              href="https://github.com/fassiliss"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <div
-                className={error ? "empty_notice" : "returnmessage"}
-                style={{ display: error == null ? "none" : "block" }}
-              >
-                <span>
-                  {error
-                    ? "Please fill in all required fields"
-                    : "Thank you! Your message has been sent successfully."}
-                </span>
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  name="name"
-                  onChange={(e) => onChange(e)}
-                  value={name}
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  name="email"
-                  onChange={(e) => onChange(e)}
-                  value={email}
-                />
-              </div>
-              <div className="form-group">
-                <textarea
-                  placeholder="Your Message"
-                  name="message"
-                  onChange={(e) => onChange(e)}
-                  value={message}
-                />
-              </div>
-              <div className="form-group">
-                <button type="submit" className="cf-btn">
-                  Send Message
-                </button>
-              </div>
-            </form>
+              GitHub ↗
+            </a>
+            <a href="tel:+16154967208">(615) 496-7208</a>
           </div>
+          <p className={styles.muted}>Smyrna, Tennessee, USA</p>
         </div>
+        <form
+          className={styles.form}
+          onSubmit={onSubmit}
+          aria-label="Contact Fassil"
+          aria-busy={status === "sending"}
+        >
+          <div className={styles.formRow}>
+            <div>
+              <label htmlFor="contact-name">Your name</label>
+              <input
+                id="contact-name"
+                name="name"
+                autoComplete="name"
+                required
+                maxLength={150}
+              />
+            </div>
+            <div>
+              <label htmlFor="contact-email">Your email</label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                maxLength={254}
+              />
+            </div>
+          </div>
+          <label htmlFor="contact-message">
+            What would you like to discuss?
+          </label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows={5}
+            required
+            maxLength={5000}
+          />
+          <button
+            className={styles.primary}
+            type="submit"
+            disabled={status === "sending"}
+          >
+            {status === "sending" ? "Sending…" : "Send message"}
+            <span aria-hidden="true">↗</span>
+          </button>
+          <p className={styles.formStatus} role="status" aria-live="polite">
+            {status === "sent"
+              ? "Thank you — your message has been sent."
+              : status === "error"
+                ? "Your message could not be sent. Please try again or email me directly."
+                : status === "invalid"
+                  ? "Please enter your name and message."
+                  : "You can also reach me directly by email."}
+          </p>
+        </form>
       </div>
     </section>
   );
-};
-export default Contact;
+}

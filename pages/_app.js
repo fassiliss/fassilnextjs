@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function App({ Component, pageProps }) {
   return (
     <AxoState>
-      <main className={inter.className}>
+      <div className={inter.className}>
         <Component {...pageProps} />
-      </main>
+      </div>
     </AxoState>
   );
 }
